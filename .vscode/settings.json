@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "queue.h": "c",
+        "sched.h": "c",
+        "cpu.h": "c",
+        "timer.h": "c",
+        "common.h": "c",
+        "pthread.h": "c",
+        "os-cfg.h": "c"
+    }
+}

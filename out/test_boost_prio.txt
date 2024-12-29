@@ -1,0 +1,572 @@
+Time slot   0---------------------------------
+ld_routine
+	Current time 0
+	Loaded a process at input/proc/f15, PID: 1 PRIO: 1
+Queue 1 time 5: (1 5)
+	CPU 0: Dispatched process  1 at 0
+	Current time 0 proc 1
+Boosting process at 0:
+Time slot   1---------------------------------
+Boosting process at 1:
+	Current time 1
+	Loaded a process at input/proc/f15, PID: 2 PRIO: 137
+Queue 137 time 5: (2 5)
+	CPU 0: Put process  1 to run queue at 1
+Queue 1 time 5: (1 5)
+Queue 137 time 5: (2 5)
+	CPU 0: Dispatched process  1 at 1
+	Current time 1 proc 1
+Time slot   2---------------------------------
+	CPU 0: Put process  1 to run queue at 2
+Queue 1 time 5: (1 5)
+Queue 137 time 5: (2 5)
+	CPU 0: Dispatched process  1 at 2
+	Current time 2 proc 1
+Boosting process at 2:
+	Process 2 in queue 137 has waiting time 4 4
+Time slot   3---------------------------------
+	CPU 0: Put process  1 to run queue at 3
+Queue 1 time 5: Boosting process at 3:
+	Current time 3
+	Loaded a process at input/proc/f15, PID: 3 PRIO: 135
+(1 5)
+Queue 137 time 4: (2 4)
+	CPU 0: Dispatched process  1 at 3
+	Current time 3 proc 1
+Queue 135 time 5: (3 5)
+Queue 137 time 4: (2 4)
+	Process 3 in queue 135 has waiting time 4 4
+	Process 2 in queue 137 has waiting time 3 3
+Time slot   4---------------------------------
+Boosting process at 4:
+	Process 3 in queue 135 has waiting time 3 3
+	Process 2 in queue 137 has waiting time 2 2
+	CPU 0: Put process  1 to run queue at 4
+Queue 1 time 5: (1 5)
+Queue 135 time 3: (3 3)
+Queue 137 time 2: (2 2)
+	CPU 0: Dispatched process  1 at 4
+	Current time 4 proc 1
+Time slot   5---------------------------------
+	Current time 5
+	Loaded a process at input/proc/f15, PID: 4 PRIO: 138
+Queue 135 time 3: (3 3)
+Queue 137 time 2: (2 2)
+Queue 138 time 5: (4 5)
+	CPU 0: Put process  1 to run queue at 5
+Queue 1 time 5: (1 5)
+Queue 135 time 3: (3 3)
+Queue 137 time 2: (2 2)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  1 at 5
+	Current time 5 proc 1
+Boosting process at 5:
+	Process 3 in queue 135 has waiting time 2 2
+	Process 2 in queue 137 has waiting time 1 1
+	Process 4 in queue 138 has waiting time 4 4
+Boosting process at 6:
+	Process 3 in queue 135 has waiting time 1 1
+	Process 2 in queue 137 has waiting time 0 0
+	Boosted process 2 from 137 to 136
+	Process 4 in queue 138 has waiting time 3 3
+Time slot   6---------------------------------
+	CPU 0: Put process  1 to run queue at 6
+Queue 1 time 5: (1 5)
+Queue 135 time 1: (3 1)
+Queue 136 time 5: (2 5)
+Queue 138 time 3: (4 3)
+	CPU 0: Dispatched process  1 at 6
+	Current time 6 proc 1
+Time slot   7---------------------------------
+Boosting process at 7:
+	Process 3 in queue 135 has waiting time 0 0
+	Boosted process 3 from 135 to 134
+	Process 2 in queue 136 has waiting time 4 4
+	Process 4 in queue 138 has waiting time 2 2
+	CPU 0: Put process  1 to run queue at 7
+Queue 1 time 5: (1 5)
+Queue 134 time 5: (3 5)
+Queue 136 time 4: (2 4)
+Queue 138 time 2: (4 2)
+	CPU 0: Dispatched process  1 at 7
+	Current time 7 proc 1
+Time slot   8---------------------------------
+Boosting process at 8:
+	Process 3 in queue 134 has waiting time 4 4
+	Process 2 in queue 136 has waiting time 3 3
+	Process 4 in queue 138 has waiting time 1 1
+	CPU 0: Put process  1 to run queue at 8
+Queue 1 time 5: (1 5)
+Queue 134 time 4: (3 4)
+Queue 136 time 3: (2 3)
+Queue 138 time 1: (4 1)
+	CPU 0: Dispatched process  1 at 8
+	Current time 8 proc 1
+Time slot   9---------------------------------
+	CPU 0: Put process  1 to run queue at 9
+Queue 1 time 5: (1 5)
+Queue 134 time 4: (3 4)
+Queue 136 time 3: (2 3)
+Queue 138 time 1: (4 1)
+	CPU 0: Dispatched process  1 at 9
+	Current time 9 proc 1
+Boosting process at 9:
+	Process 3 in queue 134 has waiting time 3 3
+	Process 2 in queue 136 has waiting time 2 2
+	Process 4 in queue 138 has waiting time 0 0
+	Boosted process 4 from 138 to 137
+Time slot  10---------------------------------
+Boosting process at 10:
+	Process 3 in queue 134 has waiting time 2 2
+	Process 2 in queue 136 has waiting time 1 1
+	Process 4 in queue 137 has waiting time 4 4
+	CPU 0: Put process  1 to run queue at 10
+Queue 1 time 5: (1 5)
+Queue 134 time 2: (3 2)
+Queue 136 time 1: (2 1)
+Queue 137 time 4: (4 4)
+	CPU 0: Dispatched process  1 at 10
+	Current time 10 proc 1
+Time slot  11---------------------------------
+Boosting process at 11:
+	Process 3 in queue 134 has waiting time 1 1
+	Process 2 in queue 136 has waiting time 0 0
+	Boosted process 2 from 136 to 135
+	Process 4 in queue 137 has waiting time 3 3
+	CPU 0: Put process  1 to run queue at 11
+Queue 1 time 5: (1 5)
+Queue 134 time 1: (3 1)
+Queue 135 time 5: (2 5)
+Queue 137 time 3: (4 3)
+	CPU 0: Dispatched process  1 at 11
+	Current time 11 proc 1
+Time slot  12---------------------------------
+Boosting process at 12:
+	Process 3 in queue 134 has waiting time 0 0
+	Boosted process 3 from 134 to 133
+	Process 2 has already been boosted 2 times
+	Process 4 in queue 137 has waiting time 2 2
+	CPU 0: Put process  1 to run queue at 12
+Queue 1 time 5: (1 5)
+Queue 133 time 5: (3 5)
+Queue 135 time 5: (2 5)
+Queue 137 time 2: (4 2)
+	CPU 0: Dispatched process  1 at 12
+	Current time 12 proc 1
+Time slot  13---------------------------------
+Boosting process at 13:
+	Process 3 has already been boosted 2 times
+	Process 2 has already been boosted 2 times
+	Process 4 in queue 137 has waiting time 1 1
+	CPU 0: Put process  1 to run queue at 13
+Queue 1 time 5: (1 5)
+Queue 133 time 5: (3 5)
+Queue 135 time 5: (2 5)
+Queue 137 time 1: (4 1)
+	CPU 0: Dispatched process  1 at 13
+	Current time 13 proc 1
+Time slot  14---------------------------------
+Boosting process at 14:
+	Process 3 has already been boosted 2 times
+	Process 2 has already been boosted 2 times
+	Process 4 in queue 137 has waiting time 0 0
+	Boosted process 4 from 137 to 136
+	CPU 0: Put process  1 to run queue at 14
+Queue 1 time 5: (1 5)
+Queue 133 time 5: (3 5)
+Queue 135 time 5: (2 5)
+Queue 136 time 5: (4 5)
+	CPU 0: Dispatched process  1 at 14
+	Current time 14 proc 1
+Time slot  15---------------------------------
+Boosting process at 15:
+	Process 3 has already been boosted 2 times
+	Process 2 has already been boosted 2 times
+	Process 4 has already been boosted 2 times
+	CPU 0: Processed  1 has finished at 15
+	CPU 0: Dispatched process  3 at 15
+	Current time 15 proc 3
+Boosting process at 16:
+Time slot  16---------------------------------
+	Process 2 has already been boosted 2 times
+	Process 4 has already been boosted 2 times
+	CPU 0: Put process  3 to run queue at 16
+Queue 135 time 5: (2 5)(3 0)
+Queue 136 time 5: (4 5)
+	CPU 0: Dispatched process  2 at 16
+	Current time 16 proc 2
+Time slot  17---------------------------------
+Boosting process at 17:
+	Process 3 in queue 135 has waiting time 4 4
+	Process 4 has already been boosted 2 times
+	CPU 0: Put process  2 to run queue at 17
+Queue 135 time 4: (3 4)
+Queue 136 time 5: (4 5)
+Queue 137 time 5: (2 5)
+	CPU 0: Dispatched process  3 at 17
+	Current time 17 proc 3
+Time slot  18---------------------------------
+Boosting process at 18:
+	Process 4 has already been boosted 2 times
+	Process 2 in queue 137 has waiting time 4 4
+	CPU 0: Put process  3 to run queue at 18
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (4 5)
+Queue 137 time 4: (2 4)
+	CPU 0: Dispatched process  3 at 18
+	Current time 18 proc 3
+Time slot  19---------------------------------
+Boosting process at 19:
+	Process 4 has already been boosted 2 times
+	Process 2 in queue 137 has waiting time 3 3
+	CPU 0: Put process  3 to run queue at 19
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (4 5)
+Queue 137 time 3: (2 3)
+	CPU 0: Dispatched process  3 at 19
+	Current time 19 proc 3
+Time slot  20---------------------------------
+Boosting process at 20:
+	Process 4 has already been boosted 2 times
+	Process 2 in queue 137 has waiting time 2 2
+	CPU 0: Put process  3 to run queue at 20
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (4 5)
+Queue 137 time 2: (2 2)
+	CPU 0: Dispatched process  3 at 20
+	Current time 20 proc 3
+Time slot  21---------------------------------
+Boosting process at 21:
+	Process 4 has already been boosted 2 times
+	Process 2 in queue 137 has waiting time 1 1
+	CPU 0: Put process  3 to run queue at 21
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (4 5)
+Queue 137 time 1: (2 1)
+	CPU 0: Dispatched process  4 at 21
+	Current time 21 proc 4
+Time slot  22---------------------------------
+Boosting process at 22:
+	Process 3 in queue 135 has waiting time 4 4
+	Process 2 in queue 137 has waiting time 0 0
+	Boosted process 2 from 137 to 136
+	CPU 0: Put process  4 to run queue at 22
+Queue 135 time 4: (3 4)
+Queue 136 time 5: (2 5)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  2 at 22
+	Current time 22 proc 2
+Time slot  23---------------------------------
+Boosting process at 23:
+	Process 3 in queue 135 has waiting time 3 3
+	Process 4 in queue 138 has waiting time 4 4
+	CPU 0: Put process  2 to run queue at 23
+Queue 135 time 3: (3 3)
+Queue 137 time 5: (2 5)
+Queue 138 time 4: (4 4)
+	CPU 0: Dispatched process  2 at 23
+	Current time 23 proc 2
+Time slot  24---------------------------------
+Boosting process at 24:
+	Process 3 in queue 135 has waiting time 2 2
+	Process 4 in queue 138 has waiting time 3 3
+	CPU 0: Put process  2 to run queue at 24
+Queue 135 time 2: (3 2)
+Queue 137 time 5: (2 5)
+Queue 138 time 3: (4 3)
+	CPU 0: Dispatched process  2 at 24
+	Current time 24 proc 2
+Time slot  25---------------------------------
+Boosting process at 25:
+	Process 3 in queue 135 has waiting time 1 1
+	Process 4 in queue 138 has waiting time 2 2
+	CPU 0: Put process  2 to run queue at 25
+Queue 135 time 1: (3 1)
+Queue 137 time 5: (2 5)
+Queue 138 time 2: (4 2)
+	CPU 0: Dispatched process  2 at 25
+	Current time 25 proc 2
+Time slot  26---------------------------------
+Boosting process at 26:
+	Process 3 in queue 135 has waiting time 0 0
+	Boosted process 3 from 135 to 134
+	Process 4 in queue 138 has waiting time 1 1
+	CPU 0: Put process  2 to run queue at 26
+Queue 134 time 5: (3 5)
+Queue 137 time 5: (2 5)
+Queue 138 time 1: (4 1)
+	CPU 0: Dispatched process  3 at 26
+	Current time 26 proc 3
+Time slot  27---------------------------------
+Boosting process at 27:
+	Process 2 in queue 137 has waiting time 4 4
+	Process 4 in queue 138 has waiting time 0 0
+	Boosted process 4 from 138 to 137
+	CPU 0: Put process  3 to run queue at 27
+Queue 135 time 5: (3 5)
+Queue 137 time 5: (2 4)(4 1)
+	CPU 0: Dispatched process  3 at 27
+	Current time 27 proc 3
+Time slot  28---------------------------------
+Boosting process at 28:
+	Process 2 in queue 137 has waiting time 4 3
+	CPU 0: Put process  3 to run queue at 28
+Queue 135 time 5: (3 5)
+Queue 137 time 4: (2 3)(4 1)
+	CPU 0: Dispatched process  3 at 28
+	Current time 28 proc 3
+Time slot  29---------------------------------
+Boosting process at 29:
+	Process 2 in queue 137 has waiting time 3 2
+	CPU 0: Put process  3 to run queue at 29
+Queue 135 time 5: (3 5)
+Queue 137 time 3: (2 2)(4 1)
+	CPU 0: Dispatched process  3 at 29
+	Current time 29 proc 3
+Time slot  30---------------------------------
+Boosting process at 30:
+	Process 2 in queue 137 has waiting time 2 1
+	CPU 0: Put process  3 to run queue at 30
+Queue 135 time 5: (3 5)
+Queue 137 time 2: (2 1)(4 1)
+	CPU 0: Dispatched process  3 at 30
+	Current time 30 proc 3
+Time slot  31---------------------------------
+Boosting process at 31:
+	Process 2 in queue 137 has waiting time 1 0
+	Boosted process 2 from 137 to 136
+	CPU 0: Put process  3 to run queue at 31
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (2 5)
+Queue 137 time 1: (4 1)
+	CPU 0: Dispatched process  3 at 31
+	Current time 31 proc 3
+Time slot  32---------------------------------
+Boosting process at 32:
+	Process 2 in queue 136 has waiting time 4 4
+	Process 4 in queue 137 has waiting time 0 0
+	Boosted process 4 from 137 to 136
+	CPU 0: Put process  3 to run queue at 32
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (2 4)(4 1)
+	CPU 0: Dispatched process  2 at 32
+	Current time 32 proc 2
+Time slot  33---------------------------------
+	CPU 0: Put process  2 to run queue at 33
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (4 5)
+Queue 137 time 5: (2 5)
+	CPU 0: Dispatched process  4 at 33
+	Current time 33 proc 4
+Boosting process at 33:
+	Process 3 in queue 135 has waiting time 4 4
+	Process 2 in queue 137 has waiting time 4 4
+Time slot  34---------------------------------
+Boosting process at 34:
+	Process 3 in queue 135 has waiting time 3 3
+	Process 2 in queue 137 has waiting time 3 3
+	CPU 0: Put process  4 to run queue at 34
+Queue 135 time 3: (3 3)
+Queue 137 time 3: (2 3)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  2 at 34
+	Current time 34 proc 2
+Time slot  35---------------------------------
+Boosting process at 35:
+	Process 3 in queue 135 has waiting time 2 2
+	Process 4 in queue 138 has waiting time 4 4
+	CPU 0: Put process  2 to run queue at 35
+Queue 135 time 2: (3 2)
+Queue 137 time 5: (2 5)
+Queue 138 time 4: (4 4)
+	CPU 0: Dispatched process  2 at 35
+	Current time 35 proc 2
+Time slot  36---------------------------------
+Boosting process at 36:
+	Process 3 in queue 135 has waiting time 1 1
+	Process 4 in queue 138 has waiting time 3 3
+	CPU 0: Put process  2 to run queue at 36
+Queue 135 time 1: (3 1)
+Queue 137 time 5: (2 5)
+Queue 138 time 3: (4 3)
+	CPU 0: Dispatched process  2 at 36
+	Current time 36 proc 2
+Time slot  37---------------------------------
+Boosting process at 37:
+	Process 3 in queue 135 has waiting time 0 0
+	Boosted process 3 from 135 to 134
+	Process 4 in queue 138 has waiting time 2 2
+	CPU 0: Put process  2 to run queue at 37
+Queue 134 time 5: (3 5)
+Queue 137 time 5: (2 5)
+Queue 138 time 2: (4 2)
+	CPU 0: Dispatched process  3 at 37
+	Current time 37 proc 3
+Time slot  38---------------------------------
+	CPU 0: Put process  3 to run queue at 38
+Queue 135 time 5: (3 5)
+Queue 137 time 5: (2 5)
+Queue 138 time 2: (4 2)
+	CPU 0: Dispatched process  4 at 38
+	Current time 38 proc 4
+Boosting process at 38:
+	Process 3 in queue 135 has waiting time 4 4
+	Process 2 in queue 137 has waiting time 4 4
+Time slot  39---------------------------------
+Boosting process at 39:
+	Process 3 in queue 135 has waiting time 3 3
+	Process 2 in queue 137 has waiting time 3 3
+	CPU 0: Put process  4 to run queue at 39
+Queue 135 time 3: (3 3)
+Queue 137 time 3: (2 3)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 39
+	Current time 39 proc 4
+Time slot  40---------------------------------
+Boosting process at 40:
+	Process 3 in queue 135 has waiting time 2 2
+	Process 2 in queue 137 has waiting time 2 2
+	CPU 0: Put process  4 to run queue at 40
+Queue 135 time 2: (3 2)
+Queue 137 time 2: (2 2)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  3 at 40
+	Current time 40 proc 3
+Time slot  41---------------------------------
+Boosting process at 41:
+	Process 2 in queue 137 has waiting time 1 1
+	Process 4 in queue 138 has waiting time 4 4
+	CPU 0: Put process  3 to run queue at 41
+Queue 135 time 5: (3 5)
+Queue 137 time 1: (2 1)
+Queue 138 time 4: (4 4)
+	CPU 0: Dispatched process  3 at 41
+	Current time 41 proc 3
+Boosting process at 42:
+	Process 2 in queue 137 has waiting time 0 0
+	Boosted process 2 from 137 to 136
+	Process 4 in queue 138 has waiting time 3 3
+Time slot  42---------------------------------
+	CPU 0: Put process  3 to run queue at 42
+Queue 135 time 5: (3 5)
+Queue 136 time 5: (2 5)
+Queue 138 time 3: (4 3)
+	CPU 0: Dispatched process  3 at 42
+	Current time 42 proc 3
+Time slot  43---------------------------------
+Boosting process at 43:
+	Process 2 in queue 136 has waiting time 4 4
+	Process 4 in queue 138 has waiting time 2 2
+	CPU 0: Processed  3 has finished at 43
+	CPU 0: Dispatched process  2 at 43
+	Current time 43 proc 2
+Time slot  44---------------------------------
+Boosting process at 44:
+	Process 4 in queue 138 has waiting time 1 1
+	CPU 0: Put process  2 to run queue at 44
+Queue 137 time 5: (2 5)
+Queue 138 time 1: (4 1)
+	CPU 0: Dispatched process  2 at 44
+	Current time 44 proc 2
+Time slot  45---------------------------------
+Boosting process at 45:
+	Process 4 in queue 138 has waiting time 0 0
+	Boosted process 4 from 138 to 137
+	CPU 0: Put process  2 to run queue at 45
+Queue 137 time 5: (4 5)(2 0)
+	CPU 0: Dispatched process  4 at 45
+	Current time 45 proc 4
+Time slot  46---------------------------------
+Boosting process at 46:
+	Process 2 in queue 137 has waiting time 4 4
+	CPU 0: Put process  4 to run queue at 46
+Queue 137 time 4: (2 4)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  2 at 46
+	Current time 46 proc 2
+Time slot  47---------------------------------
+Boosting process at 47:
+	Process 4 in queue 138 has waiting time 4 4
+	CPU 0: Put process  2 to run queue at 47
+Queue 137 time 5: (2 5)
+Queue 138 time 4: (4 4)
+	CPU 0: Dispatched process  4 at 47
+	Current time 47 proc 4
+Time slot  48---------------------------------
+Boosting process at 48:
+	Process 2 in queue 137 has waiting time 4 4
+	CPU 0: Put process  4 to run queue at 48
+Queue 137 time 4: (2 4)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 48
+	Current time 48 proc 4
+Time slot  49---------------------------------
+Boosting process at 49:
+	Process 2 in queue 137 has waiting time 3 3
+	CPU 0: Put process  4 to run queue at 49
+Queue 137 time 3: (2 3)
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  2 at 49
+	Current time 49 proc 2
+Time slot  50---------------------------------
+Boosting process at 50:
+	Process 4 in queue 138 has waiting time 4 4
+	CPU 0: Put process  2 to run queue at 50
+Queue 137 time 5: (2 5)
+Queue 138 time 4: (4 4)
+	CPU 0: Dispatched process  2 at 50
+	Current time 50 proc 2
+Time slot  51---------------------------------
+Boosting process at 51:
+	Process 4 in queue 138 has waiting time 3 3
+	CPU 0: Put process  2 to run queue at 51
+Queue 137 time 5: (2 5)
+Queue 138 time 3: (4 3)
+	CPU 0: Dispatched process  2 at 51
+	Current time 51 proc 2
+Time slot  52---------------------------------
+	CPU 0: Processed  2 has finished at 52
+	CPU 0: Dispatched process  4 at 52
+	Current time 52 proc 4
+Boosting process at 52:
+	Boost mechanism have been finished
+Time slot  53---------------------------------
+	CPU 0: Put process  4 to run queue at 53
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 53
+	Current time 53 proc 4
+Time slot  54---------------------------------
+	CPU 0: Put process  4 to run queue at 54
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 54
+	Current time 54 proc 4
+Time slot  55---------------------------------
+	CPU 0: Put process  4 to run queue at 55
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 55
+	Current time 55 proc 4
+Time slot  56---------------------------------
+	CPU 0: Put process  4 to run queue at 56
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 56
+	Current time 56 proc 4
+Time slot  57---------------------------------
+	CPU 0: Put process  4 to run queue at 57
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 57
+	Current time 57 proc 4
+Time slot  58---------------------------------
+	CPU 0: Put process  4 to run queue at 58
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 58
+	Current time 58 proc 4
+Time slot  59---------------------------------
+	CPU 0: Put process  4 to run queue at 59
+Queue 138 time 5: (4 5)
+	CPU 0: Dispatched process  4 at 59
+	Current time 59 proc 4
+Time slot  60---------------------------------
+	CPU 0: Processed  4 has finished at 60
+	CPU 0 stopped at 60
+Grantt chart of CPU 0:
+	| (0,1) | (1,1) | (2,1) | (3,1) | (4,1) | (5,1) | (6,1) | (7,1) | (8,1) | (9,1) | (10,1) | (11,1) | (12,1) | (13,1) | (14,1) | (15,3) | (16,2) | (17,3) | (18,3) | (19,3) | (20,3) | (21,4) | (22,2) | (23,2) | (24,2) | (25,2) | (26,3) | (27,3) | (28,3) | (29,3) | (30,3) | (31,3) | (32,2) | (33,4) | (34,2) | (35,2) | (36,2) | (37,3) | (38,4) | (39,4) | (40,3) | (41,3) | (42,3) | (43,2) | (44,2) | (45,4) | (46,2) | (47,4) | (48,4) | (49,2) | (50,2) | (51,2) | (52,4) | (53,4) | (54,4) | (55,4) | (56,4) | (57,4) | (58,4) | (59,4) |
